@@ -1,5 +1,5 @@
 import React from "react";
-import { Routes, Route, Navigate } from "react-router-dom";
+import { Routes, Route, Navigate, HashRouter } from "react-router-dom";
 import Home from "../pages/Home.jsx";
 import AllFoods from "../pages/AllFoods.jsx";
 import Cart from "../pages/Cart.jsx";
@@ -11,8 +11,12 @@ import Register from '../pages/Register.jsx';
 
 const Routers = () => {
   return (
+    
     <Routes>
       <Route path="/" element={<Navigate to="/home" />} />
+      <Route path="" element={<Navigate to="/home" />} />
+      {/* <Route path="/" element={<Home />} /> */}
+      <Route index element={<Home />} />
       <Route path="/home" element={<Home />} />
       <Route path="/foods" element={<AllFoods />} />
       <Route path="/foods/:id" element={<FoodDetails />} />
