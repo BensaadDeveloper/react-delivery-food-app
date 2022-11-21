@@ -1,0 +1,81 @@
+
+
+.paginationBttns {
+    width: 80%;
+    height: 40px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    column-gap: .75rem ;
+    list-style: none;
+    margin-top: 30px;
+}
+
+.paginationBttns a {
+    padding: 5px 15px;
+    background: #df2020;
+    color: #fff !important;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    margin: 5px;
+}
+
+.paginationBttns a:hover {
+    background: #212245;
+}
+
+
+@media (max-width:575.75px) {
+
+    .paginationBttns {
+        column-gap: .25rem ;
+    }
+    
+    .paginationBttns a {
+        padding: 5px 15px;
+        border-radius: 4px;
+        font-size: .75rem;
+    }
+
+}
+
+@media (min-width:576px) {
+
+    .paginationBttns {
+        column-gap: .5rem ;
+    }
+    
+    .paginationBttns a {
+        font-size: .85rem;
+    }
+
+}
+
+@media  (min-width:768px) {
+
+    .paginationBttns {
+        column-gap: .65rem ;
+    }
+    
+    .paginationBttns a {
+        font-size: .9rem;
+    }
+
+}
+
+@media (min-width: 992px) {
+
+    .paginationBttns {
+        column-gap: .75rem ;
+    }
+    
+    .paginationBttns a {
+        border-radius: 5px;
+        font-size: 1rem;
+    }
+
+}

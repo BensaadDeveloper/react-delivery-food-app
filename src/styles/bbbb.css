@@ -1,0 +1,76 @@
+.menu--open {
+    clip-path: circle(250% at top right);
+    display: block;
+  }
+  
+  
+  .menu a {
+    border-bottom: 1px solid #575766;
+  }
+  
+  .menu a:last-child {
+    border-bottom: none;
+  }
+  
+  .menu a {
+    color: #EBEBD3;
+    display: block;
+    padding: 2em 4em 2em 1.5em;
+    text-transform: uppercase;
+    text-decoration: none;
+  }
+  
+  .menu a:hover,
+  .menu a:focus {
+    background: #E4B363;
+    color: #464655;
+  }
+  
+  .menu--icon {
+    display: inline-block;
+    font-size: 1.5em;
+    margin-right: 1em;
+    width: 1.1em;
+    text-align: right;
+    color: #EBEBD3;  
+  }
+  
+  .menu-toggle {
+    padding: 1em;
+    position: absolute;
+    top: .5em;
+    right: .5em;
+    cursor: pointer;
+  }
+  
+  .hamberger__icon,
+  .hamberger__icon::before,
+  .hamberger__icon::after {
+    content: '';
+    display: block;
+    background: #EBEBD3;
+    height: 3px;
+    width: 1.75em;
+    border-radius: 3px;
+    transition: all ease-in-out 500ms;
+  }
+  
+  .hamberger__icon::before {
+    transform: translateY(-6px);
+  }
+  
+  .hamberger__icon::after {
+    transform: translateY(3px);
+  }
+  
+  .open .hamberger__icon {
+    transform: rotate(45deg);
+  }
+  
+  .open .hamberger__icon::before {
+    opacity: 0;
+  }
+  
+  .open .hamberger__icon::after {
+    transform: translateY(-3px) rotate(-90deg);
+  }
