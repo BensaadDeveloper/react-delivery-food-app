@@ -11,6 +11,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* base style */
 
 body {
@@ -41,4 +45,15 @@ h2 {
 
 section {
   padding: 60px 0px;
+}
+
+
+@media (max-width:768px) {
+  section {
+    padding: 35px 0;
+  }
+
+  h1, h2 {
+    font-size: 1.5rem;
+  }
 }
